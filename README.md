@@ -4,7 +4,7 @@
 
 ## Foundry VTT - Docker
 
-This repository hosts the Foundry VTT `Dockerfile` for [direckthit/fvtt-docker](https://hub.docker.com/r/direckthit/fvtt-docker) on Docker Hub.
+This repository hosts the Foundry VTT `Dockerfile` for [grieve/fvtt-docker](https://hub.docker.com/r/grieve/fvtt-docker) on Docker Hub.
 
 > [Foundry VTT](https://foundryvtt.com/) is a virtual tabletop for playing tabletop RPG games such as Dungeons & Dragons 5e.
 
@@ -30,8 +30,6 @@ A great cheap provider with servers all around the globe. They're one of the old
 
 **This is where I personally choose to host my games**
 
-[Sign Up](https://www.linode.com/?r=311b3d1469c9a251020a9385437b21266fa076f0)
-
 A couple promo codes you can try during registration (no guarantees):
 
 - `OBJECT20` - $20 Credit
@@ -40,7 +38,7 @@ A couple promo codes you can try during registration (no guarantees):
 #### Digital Ocean
 Another great cheap provider with servers all around the globe.
 
-[Sign Up](https://m.do.co/c/879607663421)
+[Sign Up](https://m.do.co/c/4756b33c9d67)
 
 Using the above link should grant you a $100 credit (expires in 60 days).
 
@@ -64,7 +62,7 @@ Using the above link should grant you a $100 credit (expires in 60 days).
 Manually download it or use the command below
 
 ```shell
-wget https://raw.githubusercontent.com/BenjaminPrice/fvtt-docker/master/docker-compose.yaml
+wget https://raw.githubusercontent.com/grieve/fvtt-docker/master/docker-compose.yaml
 ```
 
 ### Step 2 - Download the Foundry VTT Zip File
