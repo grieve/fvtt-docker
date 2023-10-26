@@ -1,16 +1,16 @@
 name: Push to Docker Hub
 
 on:
-   push:
-     branches:    
-      - master
-     tags:
-       - 'v*'
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v2
 
@@ -23,10 +23,10 @@ jobs:
 
       - name: Build image
         if: success()
-        run: docker build -t direckthit/fvtt-docker:${IMAGE_TAG} .
+        run: docker build -t grieve/fvtt-docker:${IMAGE_TAG} .
 
       - name: Push to docker registry
         if: success()
         uses: actions-hub/docker@master
         with:
-          args: push direckthit/fvtt-docker:${IMAGE_TAG}
+          args: push grieve/fvtt-docker:${IMAGE_TAG}
