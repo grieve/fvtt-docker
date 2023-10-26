@@ -1,7 +1,7 @@
 #!/bin/sh
+cd /mnt/host
+app_source=$(find /mnt/host -name "*.zip" -print -quit)
+unzip -qo $app_source -d /opt/foundryvtt/
 
 cd /opt/foundryvtt
-cp /host/foundryvtt*.zip .
-unzip -o foundryvtt*.zip
-rm foundryvtt*.zip
-node resources/app/main.js --dataPath=/data/foundryvtt
+node resources/app/main.js --dataPath=/mnt/data --port=30000 --hostname=0.0.0.0
